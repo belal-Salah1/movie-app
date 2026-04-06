@@ -2,27 +2,6 @@ ul{
   list-style: none;
 }
 
-:host-context(body.dark-mode) .container .row .cat-slider{
-  background-color: var(--sidebar-bg);
-}
-
-:host-context(body.dark-mode) .container .row .cat-slider .discover p,
-:host-context(body.dark-mode) .container .row .cat-slider .genres p{
-  color: var(--text-color);
-}
-
-:host-context(body.dark-mode) .container .row .content .navbar{
-  background-color: var(--navbar-bg);
-}
-
-:host-context(body.dark-mode) .container .row .content .navbar .list-icon{
-  color: var(--main-color);
-}
-
-:host-context(body.dark-mode) .container .row .content{
-  background-color: var(--bg-color);
-}
-
 .theme-toggle{
   cursor: pointer;
 }
@@ -34,7 +13,7 @@ ul{
     height: calc(100vh - 250px);
     overflow-y: scroll;
     width: 161px;
-       transform: translateX(-35px);
+    transform: translateX(-35px);
   }
   .row{
 
@@ -44,15 +23,16 @@ ul{
       z-index: 100;
       display: flex;
       flex-direction: column;
+      background-color: var(--sidebar-bg);
+      transition: background-color 0.3s ease;
 
       .logo{
-        /* transform:translateX(-9px); */
         align-self: center;
       }
       .discover{
         p{
           font-size: 14px;
-
+          color: var(--text-color);
         }
         ul{
           margin: 0;
@@ -77,6 +57,7 @@ ul{
           font-size: 14px;
           font-weight: bold;
           margin-top: 25px;
+          color: var(--text-color);
         }
         ul{
           margin: 0;
@@ -110,7 +91,15 @@ ul{
     .content{
       margin-left: 175px;
       width: calc(100% - 161px);
+      background-color: var(--bg-color);
+      transition: background-color 0.3s ease;
+
       .navbar{
+        border-top: 3px solid var(--main-color);
+        background-color: var(--navbar-bg);
+        padding: 8px 0;
+        transition: background-color 0.3s ease;
+
         .list-icon{
           display: none;
           font-size: 30px;

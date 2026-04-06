@@ -2,10 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { environment } from '../../../environments/environment.development';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-genre',
-  imports: [RouterLink],
+  imports: [RouterLink, CommonModule],
   templateUrl: './genre.component.html',
   styleUrl: './genre.component.css'
 })
