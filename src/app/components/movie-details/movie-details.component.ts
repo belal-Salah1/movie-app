@@ -21,15 +21,9 @@ export class MovieDetailsComponent implements OnInit{
    movieDetail:any;
   movieTrailerUrl!:  string;
   secureMovieTrailerUrl!: SafeResourceUrl;
-  movieCast: any;
-  current_translateX:number=0;
-  actorsNum!:number;
-  counter:number =0;
-  maxTranslateX!:number;
-  @ViewChild('actors_ul') actors_ul!:ElementRef;
-  @ViewChild('actor') actor!:ElementRef;
-  actorWidth:number = 0;
-  visibleActors: number =0;
+  movieCast: any[] = [];
+  currentIndex: number = 0;
+  visibleCount: number = 7;
   @ViewChild('video_Container')video_Container!:ElementRef;
   constructor(private _actvatedRoute:ActivatedRoute,private httpClient:HttpClient,
     private sanatizer:DomSanitizer, private _location:Location
@@ -63,10 +57,8 @@ export class MovieDetailsComponent implements OnInit{
   getMovieCast(){
     this.httpClient.get<any>(`${environment.url}${this.movieId}/credits${environment.api_key}`).subscribe({
       next:(res)=>{
-        this.movieCast = res.cast;
-        this.actorsNum = this.movieCast.length;
-        this.visibleActors = Math.floor(this.actors_ul.nativeElement.offsetWidth / this.actorWidth);
-        this.actorWidth = this.actor.nativeElement.offsetWidth;
+        this.movieCast = res.cast.filter((a: any) => a.profile_path);
+        this.currentIndex = 0;
       },
       error:(err)=>{
         console.log(err)
@@ -74,20 +66,20 @@ export class MovieDetailsComponent implements OnInit{
     })
   }
 
+  get visibleCast() {
+    return this.movieCast.slice(this.currentIndex, this.currentIndex + this.visibleCount);
+  }
+
   moveRight(){
-    if(this.counter <this.actorsNum - this.visibleActors){
-      this.current_translateX -=this.actorWidth;
-      this.actors_ul.nativeElement.style.transform = `translateX(${this.current_translateX}px)`;
-      this.counter+=1;
+    if (this.currentIndex + this.visibleCount < this.movieCast.length) {
+      this.currentIndex++;
     }
   }
-  moveLeft(){
-    if(this.counter > 0){
-    this.current_translateX +=this.actorWidth;
-    this.actors_ul.nativeElement.style.transform = `translateX(${this.current_translateX}px)`;
-    this.counter-=1;
-    }
 
+  moveLeft(){
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    }
   }
   getMovieTrailer() {
     this.httpClient.get<any>(`${environment.url}${this.movieId}/videos${environment.api_key}`).subscribe({

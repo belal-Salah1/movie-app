@@ -1,0 +1,152 @@
+- generic [ref=e4]:
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: DISCOVER
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - generic [ref=e12]: 
+            - link "Popular" [ref=e13] [cursor=pointer]:
+              - /url: /list/popular
+          - listitem [ref=e14]:
+            - generic [ref=e15]: 
+            - link "Top Rated" [ref=e16] [cursor=pointer]:
+              - /url: /list/top_rated
+          - listitem [ref=e17]:
+            - generic [ref=e18]: 
+            - link "Up Coming" [ref=e19] [cursor=pointer]:
+              - /url: /list/upcoming
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: GENRES
+        - list [ref=e22]:
+          - listitem [ref=e23]:
+            - radio [checked] [ref=e24]
+            - link "Action" [ref=e26] [cursor=pointer]:
+              - /url: /genre/28
+          - listitem [ref=e27]:
+            - radio [checked] [ref=e28]
+            - link "Adventure" [ref=e30] [cursor=pointer]:
+              - /url: /genre/12
+          - listitem [ref=e31]:
+            - radio [checked] [ref=e32]
+            - link "Animation" [ref=e34] [cursor=pointer]:
+              - /url: /genre/16
+          - listitem [ref=e35]:
+            - radio [checked] [ref=e36]
+            - link "Comedy" [ref=e38] [cursor=pointer]:
+              - /url: /genre/35
+          - listitem [ref=e39]:
+            - radio [checked] [ref=e40]
+            - link "Crime" [ref=e42] [cursor=pointer]:
+              - /url: /genre/80
+          - listitem [ref=e43]:
+            - radio [checked] [ref=e44]
+            - link "Documentary" [ref=e46] [cursor=pointer]:
+              - /url: /genre/99
+          - listitem [ref=e47]:
+            - radio [checked] [ref=e48]
+            - link "Drama" [ref=e50] [cursor=pointer]:
+              - /url: /genre/18
+          - listitem [ref=e51]:
+            - radio [checked] [ref=e52]
+            - link "Family" [ref=e54] [cursor=pointer]:
+              - /url: /genre/10751
+          - listitem [ref=e55]:
+            - radio [checked] [ref=e56]
+            - link "Fantasy" [ref=e58] [cursor=pointer]:
+              - /url: /genre/14
+          - listitem [ref=e59]:
+            - radio [checked] [ref=e60]
+            - link "History" [ref=e62] [cursor=pointer]:
+              - /url: /genre/36
+          - listitem [ref=e63]:
+            - radio [checked] [ref=e64]
+            - link "Horror" [ref=e66] [cursor=pointer]:
+              - /url: /genre/27
+          - listitem [ref=e67]:
+            - radio [checked] [ref=e68]
+            - link "Music" [ref=e70] [cursor=pointer]:
+              - /url: /genre/10402
+          - listitem [ref=e71]:
+            - radio [checked] [ref=e72]
+            - link "Mystery" [ref=e74] [cursor=pointer]:
+              - /url: /genre/9648
+          - listitem [ref=e75]:
+            - radio [checked] [ref=e76]
+            - link "Romance" [ref=e78] [cursor=pointer]:
+              - /url: /genre/10749
+          - listitem [ref=e79]:
+            - radio [checked] [ref=e80]
+            - link "Science Fiction" [ref=e82] [cursor=pointer]:
+              - /url: /genre/878
+          - listitem [ref=e83]:
+            - radio [checked] [ref=e84]
+            - link "TV Movie" [ref=e86] [cursor=pointer]:
+              - /url: /genre/10770
+          - listitem [ref=e87]:
+            - radio [checked] [ref=e88]
+            - link "Thriller" [ref=e90] [cursor=pointer]:
+              - /url: /genre/53
+          - listitem [ref=e91]:
+            - radio [checked] [ref=e92]
+            - link "War" [ref=e94] [cursor=pointer]:
+              - /url: /genre/10752
+          - listitem [ref=e95]:
+            - radio [checked] [ref=e96]
+            - link "Western" [ref=e98] [cursor=pointer]:
+              - /url: /genre/37
+  - main [ref=e100]:
+    - generic [ref=e101]:
+      - text: 
+      - list [ref=e102]:
+        - listitem [ref=e103]:
+          - generic [ref=e104]: 
+        - listitem [ref=e105] [cursor=pointer]:
+          - generic [ref=e106]: 
+        - listitem [ref=e107]:
+          - generic [ref=e109]:
+            - checkbox
+        - listitem [ref=e110]:
+          - link "" [ref=e111] [cursor=pointer]:
+            - /url: ""
+            - generic [ref=e112]: 
+    - generic [ref=e117]:
+      - generic:
+        - heading [level=2]
+        - paragraph
+      - list [ref=e120]:
+        - listitem [ref=e121]:
+          - generic [ref=e122]: 
+        - listitem [ref=e123]:
+          - generic [ref=e124]: 
+        - listitem [ref=e125]:
+          - generic [ref=e126]: 
+        - listitem [ref=e127]:
+          - generic [ref=e128]: 
+        - listitem [ref=e129]:
+          - generic [ref=e130]: 
+      - generic [ref=e132]:
+        - paragraph [ref=e133]: THE GENRES
+        - list
+      - generic [ref=e134]:
+        - paragraph [ref=e135]: THE SYNOPSIS
+        - paragraph
+      - generic [ref=e136]:
+        - paragraph [ref=e137]: THE CAST
+        - generic [ref=e138]:
+          - button "" [ref=e139] [cursor=pointer]:
+            - generic [ref=e140]: 
+          - button "" [ref=e141] [cursor=pointer]:
+            - generic [ref=e142]: 
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - button "Website " [ref=e146] [cursor=pointer]:
+            - text: Website
+            - generic [ref=e147]: 
+          - button "IMBD " [ref=e149] [cursor=pointer]:
+            - text: IMBD
+            - generic [ref=e150]: 
+          - button "Trailer" [ref=e151] [cursor=pointer]
+        - button " Back" [ref=e152] [cursor=pointer]:
+          - generic [ref=e153]: 
+          - text: Back
