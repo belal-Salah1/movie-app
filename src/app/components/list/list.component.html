@@ -7,7 +7,7 @@
     @for(movie of moviesArray ; track $index){
       <div class="movie-container text-center mb-4 ">
         <a [routerLink]="['/details/movie', movie.id]">
-          <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="" class="img-fluid movie-poster" >
+          <img [src]="'https://image.tmdb.org/t/p/w342' + movie.poster_path" alt="" class="img-fluid movie-poster" loading="lazy" width="342" height="513">
         </a>
         <p class="movie-title pt-2 mb-0">{{movie.title | uppercase}}</p>
         <div class="stars-rating pb-4">

@@ -25,6 +25,8 @@ h4{
       .movie-poster{
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        aspect-ratio: 2/3;
+        object-fit: cover;
       }
       .movie-title{
         color: var(--text-color);
