@@ -1,0 +1,191 @@
+- generic [ref=e4]:
+  - complementary [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: DISCOVER
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - generic [ref=e12]: 
+            - link "Popular" [ref=e13] [cursor=pointer]:
+              - /url: /list/popular
+          - listitem [ref=e14]:
+            - generic [ref=e15]: 
+            - link "Top Rated" [ref=e16] [cursor=pointer]:
+              - /url: /list/top_rated
+          - listitem [ref=e17]:
+            - generic [ref=e18]: 
+            - link "Up Coming" [ref=e19] [cursor=pointer]:
+              - /url: /list/upcoming
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: GENRES
+        - list [ref=e22]:
+          - listitem [ref=e23]:
+            - radio [checked] [ref=e24]
+            - link "Action" [ref=e26] [cursor=pointer]:
+              - /url: /genre/28
+          - listitem [ref=e27]:
+            - radio [checked] [ref=e28]
+            - link "Adventure" [ref=e30] [cursor=pointer]:
+              - /url: /genre/12
+          - listitem [ref=e31]:
+            - radio [checked] [ref=e32]
+            - link "Animation" [ref=e34] [cursor=pointer]:
+              - /url: /genre/16
+          - listitem [ref=e35]:
+            - radio [checked] [ref=e36]
+            - link "Comedy" [ref=e38] [cursor=pointer]:
+              - /url: /genre/35
+          - listitem [ref=e39]:
+            - radio [checked] [ref=e40]
+            - link "Crime" [ref=e42] [cursor=pointer]:
+              - /url: /genre/80
+          - listitem [ref=e43]:
+            - radio [checked] [ref=e44]
+            - link "Documentary" [ref=e46] [cursor=pointer]:
+              - /url: /genre/99
+          - listitem [ref=e47]:
+            - radio [checked] [ref=e48]
+            - link "Drama" [ref=e50] [cursor=pointer]:
+              - /url: /genre/18
+          - listitem [ref=e51]:
+            - radio [checked] [ref=e52]
+            - link "Family" [ref=e54] [cursor=pointer]:
+              - /url: /genre/10751
+          - listitem [ref=e55]:
+            - radio [checked] [ref=e56]
+            - link "Fantasy" [ref=e58] [cursor=pointer]:
+              - /url: /genre/14
+          - listitem [ref=e59]:
+            - radio [checked] [ref=e60]
+            - link "History" [ref=e62] [cursor=pointer]:
+              - /url: /genre/36
+          - listitem [ref=e63]:
+            - radio [checked] [ref=e64]
+            - link "Horror" [ref=e66] [cursor=pointer]:
+              - /url: /genre/27
+          - listitem [ref=e67]:
+            - radio [checked] [ref=e68]
+            - link "Music" [ref=e70] [cursor=pointer]:
+              - /url: /genre/10402
+          - listitem [ref=e71]:
+            - radio [checked] [ref=e72]
+            - link "Mystery" [ref=e74] [cursor=pointer]:
+              - /url: /genre/9648
+          - listitem [ref=e75]:
+            - radio [checked] [ref=e76]
+            - link "Romance" [ref=e78] [cursor=pointer]:
+              - /url: /genre/10749
+          - listitem [ref=e79]:
+            - radio [checked] [ref=e80]
+            - link "Science Fiction" [ref=e82] [cursor=pointer]:
+              - /url: /genre/878
+          - listitem [ref=e83]:
+            - radio [checked] [ref=e84]
+            - link "TV Movie" [ref=e86] [cursor=pointer]:
+              - /url: /genre/10770
+          - listitem [ref=e87]:
+            - radio [checked] [ref=e88]
+            - link "Thriller" [ref=e90] [cursor=pointer]:
+              - /url: /genre/53
+          - listitem [ref=e91]:
+            - radio [checked] [ref=e92]
+            - link "War" [ref=e94] [cursor=pointer]:
+              - /url: /genre/10752
+          - listitem [ref=e95]:
+            - radio [checked] [ref=e96]
+            - link "Western" [ref=e98] [cursor=pointer]:
+              - /url: /genre/37
+  - main [ref=e100]:
+    - generic [ref=e101]:
+      - text: 
+      - textbox "Search movies..." [ref=e102]
+      - list [ref=e103]:
+        - listitem [ref=e104] [cursor=pointer]:
+          - generic [ref=e105]: 
+        - listitem [ref=e106] [cursor=pointer]:
+          - generic [ref=e107]: 
+        - listitem [ref=e108]:
+          - generic [ref=e110]:
+            - checkbox
+        - listitem [ref=e111]:
+          - link "" [ref=e112] [cursor=pointer]:
+            - /url: ""
+            - generic [ref=e113]: 
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - 'heading "Avatar: Fire and Ash" [level=2] [ref=e120]'
+        - paragraph [ref=e121]: The world of Pandora will change forever.
+      - generic [ref=e122]:
+        - list [ref=e124]:
+          - listitem [ref=e125]:
+            - generic [ref=e126]: 
+          - listitem [ref=e127]:
+            - generic [ref=e128]: 
+          - listitem [ref=e129]:
+            - generic [ref=e130]: 
+          - listitem [ref=e131]:
+            - generic [ref=e132]: 
+          - listitem [ref=e133]:
+            - generic [ref=e134]: 
+          - generic [ref=e135]: "7.375"
+        - generic [ref=e136]: ENGLISH / 198MIN. / 2025
+      - generic [ref=e137]:
+        - paragraph [ref=e138]: THE GENRES
+        - list [ref=e139]:
+          - listitem [ref=e140]:
+            - radio [checked] [ref=e141]
+            - link "Science Fiction" [ref=e143] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=e144]:
+            - radio [checked] [ref=e145]
+            - link "Adventure" [ref=e147] [cursor=pointer]:
+              - /url: ""
+          - listitem [ref=e148]:
+            - radio [checked] [ref=e149]
+            - link "Fantasy" [ref=e151] [cursor=pointer]:
+              - /url: ""
+      - generic [ref=e152]:
+        - paragraph [ref=e153]: THE SYNOPSIS
+        - paragraph [ref=e154]: "In the wake of the devastating war against the RDA and the loss of their eldest son, Jake Sully and Neytiri face a new threat on Pandora: the Ash People, a violent and power-hungry Na'vi tribe led by the ruthless Varang. Jake's family must fight for their survival and the future of Pandora in a conflict that pushes them to their emotional and physical limits."
+      - generic [ref=e155]:
+        - paragraph [ref=e156]: THE CAST
+        - generic [ref=e157]:
+          - generic: «
+          - link "Sam Worthington" [ref=e158] [cursor=pointer]:
+            - /url: /details/actor/65731
+            - img "Sam Worthington" [ref=e159]
+          - link "Zoe Saldaña" [ref=e160] [cursor=pointer]:
+            - /url: /details/actor/8691
+            - img "Zoe Saldaña" [ref=e161]
+          - link "Sigourney Weaver" [ref=e162] [cursor=pointer]:
+            - /url: /details/actor/10205
+            - img "Sigourney Weaver" [ref=e163]
+          - link "Stephen Lang" [ref=e164] [cursor=pointer]:
+            - /url: /details/actor/32747
+            - img "Stephen Lang" [ref=e165]
+          - link "Oona Chaplin" [ref=e166] [cursor=pointer]:
+            - /url: /details/actor/566331
+            - img "Oona Chaplin" [ref=e167]
+          - link "Jack Champion" [ref=e168] [cursor=pointer]:
+            - /url: /details/actor/1895760
+            - img "Jack Champion" [ref=e169]
+          - link "Kate Winslet" [ref=e170] [cursor=pointer]:
+            - /url: /details/actor/204
+            - img "Kate Winslet" [ref=e171]
+          - generic [ref=e172] [cursor=pointer]: »
+      - generic [ref=e173]:
+        - generic [ref=e174]:
+          - link "Website " [ref=e175] [cursor=pointer]:
+            - /url: https://www.avatar.com/movies/avatar-fire-and-ash
+            - button "Website " [ref=e176]:
+              - text: Website
+              - generic [ref=e177]: 
+          - link "IMBD " [ref=e178] [cursor=pointer]:
+            - /url: https://www.themoviedb.org/movie/83533
+            - button "IMBD " [ref=e179]:
+              - text: IMBD
+              - generic [ref=e180]: 
+          - button "Trailer" [ref=e181] [cursor=pointer]
+        - button " Back" [ref=e182] [cursor=pointer]:
+          - generic [ref=e183]: 
+          - text: Back
