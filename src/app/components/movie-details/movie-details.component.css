@@ -1,0 +1,233 @@
+:host-context(body.dark-mode) .movie .info .text h2,
+:host-context(body.dark-mode) .movie .info .Synopsis p,
+:host-context(body.dark-mode) .movie .info .cast p,
+:host-context(body.dark-mode) .movie .info .genres p,
+:host-context(body.dark-mode) .movie .info .text p{
+  color: var(--text-color);
+}
+
+:host-context(body.dark-mode) .movie .info .stars .evaluation,
+:host-context(body.dark-mode) .movie .info .stars .info{
+  color: var(--text-secondary);
+}
+
+:host-context(body.dark-mode) .movie .buttons .actor-button i{
+  color: var(--text-color);
+}
+
+.movie{
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  margin:50px 20px 100px;
+  gap: 60px;
+  .image{
+    flex: .5;
+    height: 100%;
+    img{
+      width: 334px;
+      height: 451px;
+    }
+  }
+
+  .info{
+    flex: 1.5;
+    .text{
+      h2{
+        font-size: calc(1.325rem + .9vw);
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+      }
+      p{
+
+      }
+    }
+
+    .stars{
+      display: flex;
+      justify-content: space-between;
+      .evaluation{
+        color: #575800;
+        position: relative;
+
+        ul{
+
+          li{
+            i{
+              font-size: 14px;
+            }
+          }
+        }
+        span{
+          font-size: 12px;
+          transform: translateY(3px);
+        }
+
+      }
+      .info{
+        color: #575800;
+        text-align: right;
+      }
+
+    }
+    .genres{
+      p{
+        margin: 0;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      ul{
+        padding-left:0 ;
+        li{
+          margin-right: 18px;
+          input{
+            accent-color: var(--main-color);
+            transform: scale(1.2) translateY(1px);
+
+          }
+          label{
+            margin-left: 2px;
+            font-size: 12px;
+            font-weight: 600;
+            a{
+              color: var(--main-color);
+            }
+          }
+        }
+      }
+    }
+    .Synopsis{
+      p{
+        &:first-child{
+          margin: 0;
+          font-weight: bold;
+          font-size: 13px;
+        }
+        &:last-child{
+          line-height: 1.8;
+          font-size: 13px;
+        }
+      }
+    }
+    .cast{
+      margin-bottom: 28px;
+      p{
+        margin: 0;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .actors-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      .actor-button{
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        transform: translateY(0px);
+        i{
+          background-color: transparent;
+          color: black;
+
+        }
+      }
+        }
+        .actors{
+          max-width: 400px;
+          overflow: hidden;
+
+          ul{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            transition: .2s;
+            li{
+              max-height: 35px;
+              min-width: 35px;
+              border-radius: 50%;
+              overflow: hidden;
+              margin-right: 20px;
+              a{
+                img{
+                  height: 100%;
+                  width: 100%;
+                  transform: scale(1.2) translateY(2px);
+
+                  }
+              }
+              }
+            }
+          }
+        }
+      }
+    }
+    .buttons{
+      display: flex;
+      justify-content: space-between;
+      button{
+        border: 1px solid #83cec4;
+        color: var(--ul-color);
+        margin-left: 8px;
+        border-radius: 4px;
+        min-height: 38px;
+        min-width: 78px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      a{
+        &:first-child{
+          button{
+            i{
+
+            }
+          }
+
+        }
+        &:last-child{
+          button{
+            i{
+
+            }
+          }
+        }
+      }
+      button{
+
+      }
+      div{
+        iframe{
+
+        }
+      }
+      .back{
+        background-color: var(--ul-color);
+        color: black;
+      }
+    }
+    .video-container{
+      i{
+        z-index: 100;
+        top: -9px;
+        right: 24px;
+        font-size: 36px;
+        position: fixed;
+        color: black;
+      }
+      iframe{
+        top: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 90%;
+      width: 90%;
+      z-index: 100;
+      position: fixed;
+  }
+    }
+
+

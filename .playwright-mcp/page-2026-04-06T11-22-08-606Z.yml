@@ -1,0 +1,372 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - navigation [ref=e6]:
+        - heading "Discover" [level=3] [ref=e7]
+        - link "Popular" [ref=e8] [cursor=pointer]:
+          - /url: /list/category/popular
+          - generic [ref=e9]:
+            - img [ref=e11]
+            - text: Popular
+        - link "Top Rated" [ref=e13] [cursor=pointer]:
+          - /url: /list/category/top_rated
+          - generic:
+            - img [ref=e15]
+            - text: Top Rated
+        - link "Upcoming" [ref=e17] [cursor=pointer]:
+          - /url: /list/category/upcoming
+          - generic:
+            - img [ref=e19]
+            - text: Upcoming
+        - heading "Genres" [level=3] [ref=e21]
+        - link "Action" [ref=e22] [cursor=pointer]:
+          - /url: /list/genre/28
+          - generic:
+            - img [ref=e24]
+            - text: Action
+        - link "Adventure" [ref=e26] [cursor=pointer]:
+          - /url: /list/genre/12
+          - generic:
+            - img [ref=e28]
+            - text: Adventure
+        - link "Animation" [ref=e30] [cursor=pointer]:
+          - /url: /list/genre/16
+          - generic:
+            - img [ref=e32]
+            - text: Animation
+        - link "Comedy" [ref=e34] [cursor=pointer]:
+          - /url: /list/genre/35
+          - generic:
+            - img [ref=e36]
+            - text: Comedy
+        - link "Crime" [ref=e38] [cursor=pointer]:
+          - /url: /list/genre/80
+          - generic:
+            - img [ref=e40]
+            - text: Crime
+        - link "Documentary" [ref=e42] [cursor=pointer]:
+          - /url: /list/genre/99
+          - generic:
+            - img [ref=e44]
+            - text: Documentary
+        - link "Drama" [ref=e46] [cursor=pointer]:
+          - /url: /list/genre/18
+          - generic:
+            - img [ref=e48]
+            - text: Drama
+        - link "Family" [ref=e50] [cursor=pointer]:
+          - /url: /list/genre/10751
+          - generic:
+            - img [ref=e52]
+            - text: Family
+        - link "Fantasy" [ref=e54] [cursor=pointer]:
+          - /url: /list/genre/14
+          - generic:
+            - img [ref=e56]
+            - text: Fantasy
+        - link "History" [ref=e58] [cursor=pointer]:
+          - /url: /list/genre/36
+          - generic:
+            - img [ref=e60]
+            - text: History
+        - link "Horror" [ref=e62] [cursor=pointer]:
+          - /url: /list/genre/27
+          - generic:
+            - img [ref=e64]
+            - text: Horror
+        - link "Music" [ref=e66] [cursor=pointer]:
+          - /url: /list/genre/10402
+          - generic:
+            - img [ref=e68]
+            - text: Music
+        - link "Mystery" [ref=e70] [cursor=pointer]:
+          - /url: /list/genre/9648
+          - generic:
+            - img [ref=e72]
+            - text: Mystery
+        - link "Romance" [ref=e74] [cursor=pointer]:
+          - /url: /list/genre/10749
+          - generic:
+            - img [ref=e76]
+            - text: Romance
+        - link "Science Fiction" [ref=e78] [cursor=pointer]:
+          - /url: /list/genre/878
+          - generic:
+            - img [ref=e80]
+            - text: Science Fiction
+        - link "TV Movie" [ref=e82] [cursor=pointer]:
+          - /url: /list/genre/10770
+          - generic:
+            - img [ref=e84]
+            - text: TV Movie
+        - link "Thriller" [ref=e86] [cursor=pointer]:
+          - /url: /list/genre/53
+          - generic:
+            - img [ref=e88]
+            - text: Thriller
+        - link "War" [ref=e90] [cursor=pointer]:
+          - /url: /list/genre/10752
+          - generic:
+            - img [ref=e92]
+            - text: War
+        - link "Western" [ref=e94] [cursor=pointer]:
+          - /url: /list/genre/37
+          - generic:
+            - img [ref=e96]
+            - text: Western
+      - link "The movie DB website" [ref=e99] [cursor=pointer]:
+        - /url: https://www.themoviedb.org/
+        - img [ref=e101]
+    - generic [ref=e103]:
+      - generic [ref=e109]:
+        - generic [ref=e111] [cursor=pointer]:
+          - button "Search for a movie":
+            - generic:
+              - img
+          - textbox "Search Input":
+            - /placeholder: Search for a movie...
+        - generic [ref=e113]:
+          - button "Enable dark mode" [ref=e114] [cursor=pointer]: ☀
+          - generic [ref=e115]:
+            - checkbox "Toggle Switch" [ref=e116] [cursor=pointer]
+            - generic [ref=e117] [cursor=pointer]: Toggle Switch
+          - button "Disable dark mode" [ref=e118] [cursor=pointer]: ☾
+        - button "Toggle profile menu" [ref=e120] [cursor=pointer]:
+          - img [ref=e123]
+      - article [ref=e127]:
+        - generic [ref=e128]:
+          - heading "popular" [level=1] [ref=e129]
+          - heading "category" [level=2] [ref=e130]
+        - generic [ref=e132]:
+          - link "poster movie No Way Up ★ ★ ★ ★ ★ ★" [ref=e133] [cursor=pointer]:
+            - /url: /detail/movie/1096197
+            - img "poster movie" [ref=e134]
+            - generic [ref=e135]:
+              - heading "No Way Up" [level=3] [ref=e136]
+              - generic [ref=e138]:
+                - generic [ref=e139]: ★
+                - generic [ref=e140]: ★
+                - generic [ref=e141]: ★ ★
+                - generic [ref=e142]: ★
+                - generic [ref=e143]: ★
+          - 'link "poster movie Dune: Part Two ★ ★ ★ ★ ★" [ref=e144] [cursor=pointer]':
+            - /url: /detail/movie/693134
+            - img "poster movie" [ref=e145]
+            - generic [ref=e146]:
+              - 'heading "Dune: Part Two" [level=3] [ref=e147]'
+              - generic [ref=e149]:
+                - generic [ref=e150]: ★
+                - generic [ref=e151]: ★
+                - generic [ref=e152]: ★
+                - generic [ref=e153]: ★
+                - generic [ref=e154]: ★
+          - link "poster movie Poor Things ★ ★ ★ ★ ★" [ref=e155] [cursor=pointer]:
+            - /url: /detail/movie/792307
+            - img "poster movie" [ref=e156]
+            - generic [ref=e157]:
+              - heading "Poor Things" [level=3] [ref=e158]
+              - generic [ref=e160]:
+                - generic [ref=e161]: ★
+                - generic [ref=e162]: ★
+                - generic [ref=e163]: ★
+                - generic [ref=e164]: ★
+                - generic [ref=e165]: ★
+          - link "poster movie Land of Bad ★ ★ ★ ★ ★" [ref=e166] [cursor=pointer]:
+            - /url: /detail/movie/969492
+            - img "poster movie" [ref=e167]
+            - generic [ref=e168]:
+              - heading "Land of Bad" [level=3] [ref=e169]
+              - generic [ref=e171]:
+                - generic [ref=e172]: ★
+                - generic [ref=e173]: ★
+                - generic [ref=e174]: ★
+                - generic [ref=e175]: ★
+                - generic [ref=e176]: ★
+          - link "poster movie Dune ★ ★ ★ ★ ★ ★" [ref=e177] [cursor=pointer]:
+            - /url: /detail/movie/438631
+            - img "poster movie" [ref=e178]
+            - generic [ref=e179]:
+              - heading "Dune" [level=3] [ref=e180]
+              - generic [ref=e182]:
+                - generic [ref=e183]: ★
+                - generic [ref=e184]: ★
+                - generic [ref=e185]: ★
+                - generic [ref=e186]: ★ ★
+                - generic [ref=e187]: ★
+          - link "poster movie Migration ★ ★ ★ ★ ★ ★" [ref=e188] [cursor=pointer]:
+            - /url: /detail/movie/940551
+            - img "poster movie" [ref=e189]
+            - generic [ref=e190]:
+              - heading "Migration" [level=3] [ref=e191]
+              - generic [ref=e193]:
+                - generic [ref=e194]: ★
+                - generic [ref=e195]: ★
+                - generic [ref=e196]: ★
+                - generic [ref=e197]: ★ ★
+                - generic [ref=e198]: ★
+          - link "poster movie Anyone But You ★ ★ ★ ★ ★" [ref=e199] [cursor=pointer]:
+            - /url: /detail/movie/1072790
+            - img "poster movie" [ref=e200]
+            - generic [ref=e201]:
+              - heading "Anyone But You" [level=3] [ref=e202]
+              - generic [ref=e204]:
+                - generic [ref=e205]: ★
+                - generic [ref=e206]: ★
+                - generic [ref=e207]: ★
+                - generic [ref=e208]: ★
+                - generic [ref=e209]: ★
+          - link "poster movie The Adventures ★ ★ ★ ★ ★" [ref=e210] [cursor=pointer]:
+            - /url: /detail/movie/949429
+            - img "poster movie" [ref=e211]
+            - generic [ref=e212]:
+              - heading "The Adventures" [level=3] [ref=e213]
+              - generic [ref=e215]:
+                - generic [ref=e216]: ★
+                - generic [ref=e217]: ★
+                - generic [ref=e218]: ★
+                - generic [ref=e219]: ★
+                - generic [ref=e220]: ★
+          - link "poster movie Wonka ★ ★ ★ ★ ★ ★" [ref=e221] [cursor=pointer]:
+            - /url: /detail/movie/787699
+            - img "poster movie" [ref=e222]
+            - generic [ref=e223]:
+              - heading "Wonka" [level=3] [ref=e224]
+              - generic [ref=e226]:
+                - generic [ref=e227]: ★
+                - generic [ref=e228]: ★
+                - generic [ref=e229]: ★
+                - generic [ref=e230]: ★ ★
+                - generic [ref=e231]: ★
+          - 'link "poster movie Through My Window 3: Looking at You ★ ★ ★ ★ ★" [ref=e232] [cursor=pointer]':
+            - /url: /detail/movie/1139566
+            - img "poster movie"
+            - generic [ref=e233]:
+              - 'heading "Through My Window 3: Looking at You" [level=3] [ref=e234]'
+              - generic [ref=e236]:
+                - generic [ref=e237]: ★
+                - generic [ref=e238]: ★
+                - generic [ref=e239]: ★
+                - generic [ref=e240]: ★
+                - generic [ref=e241]: ★
+          - link "poster movie Skal - Fight for Survival ★ ★ ★ ★ ★ ★" [ref=e242] [cursor=pointer]:
+            - /url: /detail/movie/1211483
+            - img "poster movie"
+            - generic [ref=e243]:
+              - heading "Skal - Fight for Survival" [level=3] [ref=e244]
+              - generic [ref=e246]:
+                - generic [ref=e247]: ★
+                - generic [ref=e248]: ★
+                - generic [ref=e249]: ★ ★
+                - generic [ref=e250]: ★
+                - generic [ref=e251]: ★
+          - link "poster movie The Marvels ★ ★ ★ ★ ★" [ref=e252] [cursor=pointer]:
+            - /url: /detail/movie/609681
+            - img "poster movie"
+            - generic [ref=e253]:
+              - heading "The Marvels" [level=3] [ref=e254]
+              - generic [ref=e256]:
+                - generic [ref=e257]: ★
+                - generic [ref=e258]: ★
+                - generic [ref=e259]: ★
+                - generic [ref=e260]: ★
+                - generic [ref=e261]: ★
+          - link "poster movie The Voyagers ★ ★ ★ ★ ★ ★" [ref=e262] [cursor=pointer]:
+            - /url: /detail/movie/885303
+            - img "poster movie"
+            - generic [ref=e263]:
+              - heading "The Voyagers" [level=3] [ref=e264]
+              - generic [ref=e266]:
+                - generic [ref=e267]: ★
+                - generic [ref=e268]: ★
+                - generic [ref=e269]: ★ ★
+                - generic [ref=e270]: ★
+                - generic [ref=e271]: ★
+          - link "poster movie Wish ★ ★ ★ ★ ★" [ref=e272] [cursor=pointer]:
+            - /url: /detail/movie/1022796
+            - img "poster movie"
+            - generic [ref=e273]:
+              - heading "Wish" [level=3] [ref=e274]
+              - generic [ref=e276]:
+                - generic [ref=e277]: ★
+                - generic [ref=e278]: ★
+                - generic [ref=e279]: ★
+                - generic [ref=e280]: ★
+                - generic [ref=e281]: ★
+          - link "poster movie Lights Out ★ ★ ★ ★ ★" [ref=e282] [cursor=pointer]:
+            - /url: /detail/movie/931642
+            - img "poster movie"
+            - generic [ref=e283]:
+              - heading "Lights Out" [level=3] [ref=e284]
+              - generic [ref=e286]:
+                - generic [ref=e287]: ★
+                - generic [ref=e288]: ★
+                - generic [ref=e289]: ★
+                - generic [ref=e290]: ★
+                - generic [ref=e291]: ★
+          - link "poster movie Red Right Hand ★ ★ ★ ★ ★" [ref=e292] [cursor=pointer]:
+            - /url: /detail/movie/1227816
+            - img "poster movie"
+            - generic [ref=e293]:
+              - heading "Red Right Hand" [level=3] [ref=e294]
+              - generic [ref=e296]:
+                - generic [ref=e297]: ★
+                - generic [ref=e298]: ★
+                - generic [ref=e299]: ★
+                - generic [ref=e300]: ★
+                - generic [ref=e301]: ★
+          - link "poster movie The OctoGames ★ ★ ★ ★ ★ ★" [ref=e302] [cursor=pointer]:
+            - /url: /detail/movie/1028703
+            - img "poster movie"
+            - generic [ref=e303]:
+              - heading "The OctoGames" [level=3] [ref=e304]
+              - generic [ref=e306]:
+                - generic [ref=e307]: ★
+                - generic [ref=e308]: ★
+                - generic [ref=e309]: ★ ★
+                - generic [ref=e310]: ★
+                - generic [ref=e311]: ★
+          - link "poster movie The Five ★ ★ ★ ★ ★" [ref=e312] [cursor=pointer]:
+            - /url: /detail/movie/1079394
+            - img "poster movie"
+            - generic [ref=e313]:
+              - heading "The Five" [level=3] [ref=e314]
+              - generic [ref=e316]:
+                - generic [ref=e317]: ★
+                - generic [ref=e318]: ★
+                - generic [ref=e319]: ★
+                - generic [ref=e320]: ★
+                - generic [ref=e321]: ★
+          - link "poster movie Aquaman and the Lost Kingdom ★ ★ ★ ★ ★" [ref=e322] [cursor=pointer]:
+            - /url: /detail/movie/572802
+            - img "poster movie"
+            - generic [ref=e323]:
+              - heading "Aquaman and the Lost Kingdom" [level=3] [ref=e324]
+              - generic [ref=e326]:
+                - generic [ref=e327]: ★
+                - generic [ref=e328]: ★
+                - generic [ref=e329]: ★
+                - generic [ref=e330]: ★
+                - generic [ref=e331]: ★
+          - link "poster movie Badland Hunters ★ ★ ★ ★ ★" [ref=e332] [cursor=pointer]:
+            - /url: /detail/movie/933131
+            - img "poster movie"
+            - generic [ref=e333]:
+              - heading "Badland Hunters" [level=3] [ref=e334]
+              - generic [ref=e336]:
+                - generic [ref=e337]: ★
+                - generic [ref=e338]: ★
+                - generic [ref=e339]: ★
+                - generic [ref=e340]: ★
+                - generic [ref=e341]: ★
+  - generic:
+    - img
+    - img
+    - img
+    - img
+    - img
+    - img
+    - img
+    - img
+    - img
+    - img
+    - img

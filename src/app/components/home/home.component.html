@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-2 cat-slider ">
+      <div class="logo my-5">
+        <img src="assets/logo.PNG" alt="">
+      </div>
+      <div class="uls-container " #ulsContainer>
+      <div class="discover fw-bold">
+        <p>DISCOVER</p>
+        <ul>
+          <li><i class="bi bi-heart-fill"></i><a [routerLink]='["/list","popular"]'>Popular</a></li>
+          <li><i class="bi bi-fire"></i><a  [routerLink]='["/list","top_rated"]'>Top Rated</a></li>
+          <li><i class="bi bi-calendar"></i><a  [routerLink]='["/list","upcoming"]'>Up Coming</a></li>
+        </ul>
+      </div>
+      <div class="genres">
+        <p>GENRES</p>
+        <ul>
+          @for(movieType of genresMoviesArr ; track $index ){
+            <li class="ul-flex" >
+              <input type="radio" [name]="movieType.name" checked>
+                <label [for]="movieType.name"><a [routerLink]="['genre',movieType.id]">{{movieType.name}}</a></label>
+            </li>
+          }
+        </ul>
+      </div>
+      </div>
+      <div class="image ul-flex " #logoImage>
+        <img src="../../../assets/movieDbLogo.PNG" alt="">
+      </div>
+    </div>
+    <div class="col col-10 content">
+      <div class="navbar">
+        <i class="bi bi-list list-icon" (click)="toggleListIcon()"></i>
+        <ul class="d-flex ms-auto ">
+          <li ><i class="bi bi-search"></i></li>
+          <li class="theme-toggle" (click)="toggleDarkMode()">
+            <i class="bi" [ngClass]="isDarkMode ? 'bi-moon' : 'bi-brightness-high-fill'"></i>
+          </li>
+          <li><div class="cl-toggle-switch">
+            <label class="cl-switch">
+              <input type="checkbox" [checked]="isDarkMode" (change)="toggleDarkMode()">
+              <span></span>
+            </label>
+          </div></li>
+          <li><a href=""><i class="bi bi-person-circle"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="movies-container">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

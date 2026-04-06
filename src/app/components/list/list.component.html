@@ -1,0 +1,17 @@
+<div class="text mb-4">
+  <h4 class="fw-normal mb-0 fs-3 text-uppercase">{{movieCatagory}}</h4>
+  <span class="text-black-50 fw-bold mt-0 ">CATEGORY</span>
+</div>
+<div class="imgs-container">
+  <div class="row m-0 row-cols-lg-3 row-cols-md-2">
+    @for(movie of moviesArray ; track $index){
+      <div class="movie-container text-center mb-2 ">
+        <a [routerLink]="['/details/movie', movie.id]">
+          <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="" class="img-fluid" >
+        </a>
+        <p class=" pt-2 mb-0 text-black-50">{{movie.title}}</p>
+        <p class="stars pb-4 ">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+      </div>
+    }
+  </div>
+</div>

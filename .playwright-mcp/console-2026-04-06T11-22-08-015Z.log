@@ -1,0 +1,6 @@
+[     366ms] [WARNING] Patch: original value undefined is not an object. @ https://angular-movies-a12d3.web.app/main.js:0
+[     366ms] [WARNING] Patch: original value undefined and updates undefined are not objects. @ https://angular-movies-a12d3.web.app/main.js:0
+[     367ms] [WARNING] Patch: original value undefined is not an object. @ https://angular-movies-a12d3.web.app/main.js:0
+[    2356ms] P: NG0909
+    at kn.assertInAngularZone (https://angular-movies-a12d3.web.app/main.js:1:151388)
+    at https://angular-movies-a12d3.web.app/main.js:1:226855

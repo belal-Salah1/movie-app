@@ -1,0 +1,100 @@
+<div class="movie">
+  <div class="image ">
+    <img class=""
+      [src]="'https://image.tmdb.org/t/p/w500' + movieDetail.poster_path"
+      alt=""
+    />
+  </div>
+  <div class="info">
+    <div class="text">
+      <h2>{{ movieDetail.title }}</h2>
+      <p class="text-black-50 fw-bold">{{ movieDetail.tagline }}</p>
+    </div>
+    <div class="stars">
+      <div class="evaluation">
+        <ul class="ul-flex ps-0 mb-4">
+          <li><i class="bi bi-star-fill"></i></li>
+          <li><i class="bi bi-star-fill"></i></li>
+          <li><i class="bi bi-star-fill"></i></li>
+          <li><i class="bi bi-star-fill"></i></li>
+          <li><i class="bi bi-star-fill"></i></li>
+          <span class="ms-1">{{movieDetail.vote_average}}</span>
+        </ul>
+      </div>
+      <div class="info">
+        <span>{{movieDetail.original_language |language}} / </span>
+        <span>{{movieDetail.runtime | time}} / </span>
+        <span>{{movieDetail.release_date|time}}</span>
+      </div>
+    </div>
+    <div class="genres mb-3">
+      <p>THE GENRES</p>
+      <ul class="ul-flex mt-2 mb-0">
+        @for(genre of movieDetail.genres; track $index){
+        <li>
+          <input type="radio" name="" checked />
+          <label for=""
+            ><a href="">{{ genre.name }}</a></label
+          >
+        </li>
+        }
+      </ul>
+    </div>
+    <div class="Synopsis">
+      <p>THE SYNOPSIS</p>
+      <p class="text-black-50">{{ movieDetail.overview }}</p>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="cast">
+      <p>THE CAST</p>
+      <div class="actors-container">
+        <button class="actor-button" (click)="moveLeft()"><i class="bi bi-arrow-left"></i></button>
+        <div class="actors text-center">
+          <ul #actors_ul>
+            @for (actor of movieCast; track $index) {
+              <li #actor>
+                <a href="" [title]="actor.name" [routerLink]="['/details/actor',actor.id]">
+                  <img [src]="'https://image.tmdb.org/t/p/w500' + actor.profile_path" alt="">
+                </a>
+              </li>
+            }
+          </ul>
+        </div>
+        <button class="actor-button" (click)="moveRight()"><i class="bi bi-arrow-right"></i></button>
+      </div>
+    </div>
+
+
+    <div class="buttons">
+      <div>
+        <a [href]="movieDetail.homepage" target="_blank"
+          ><button>Website <i class="bi bi-link"></i></button
+        ></a>
+        <a
+          [href]="'https://www.themoviedb.org/movie/' + movieDetail.id"
+          target="_blank"
+          ><button>IMBD <i class="bi bi-ladder"></i></button
+        ></a>
+        <button (click)="getMovieTrailer()">Trailer</button>
+      </div>
+      <button (click)="goBack()" class="back"><i class="bi bi-arrow-left" ></i>Back</button>
+    </div>
+  </div>
+</div>
+<div class="video-container" *ngIf="secureMovieTrailerUrl" #video_Container>
+  <i class="bi bi-x" (click)="closeVideo() " #closeIcon></i>
+  <iframe #iframe
+    [src]="secureMovieTrailerUrl"
+    width="600px"
+    height="315"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>

@@ -1,0 +1,85 @@
+:host-context(body.dark-mode) .actors .info .text h2,
+:host-context(body.dark-mode) .actors .info .Biography p{
+  color: var(--text-color);
+}
+
+.actors{
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  margin:50px 20px 100px;
+  gap: 60px;
+  .image{
+    flex: .5;
+    height: 100%;
+    img{
+      width: 334px;
+      height: 451px;
+    }
+  }
+
+  .info{
+    flex: 1.5;
+    .text{
+      h2{
+        font-size: calc(1.325rem + .9vw);
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+      }
+    }
+
+
+    .Biography{
+      p{
+        &:first-child{
+          margin: 0;
+          font-weight: bold;
+          font-size: 13px;
+        }
+        &:last-child{
+          line-height: 1.8;
+          font-size: 13px;
+        }
+      }
+    }
+
+
+        }
+      }
+      .Biography{
+        p{
+          &:first-child{
+            margin: 0;
+            font-weight: bold;
+            font-size: 13px;
+          }
+          &:last-child{
+            line-height: 1.5;
+            font-size: 13px;
+          }
+        }
+      }
+    .buttons{
+      display: flex;
+      justify-content: space-between;
+      button{
+        border: 1px solid #83cec4;
+        color: var(--ul-color);
+        margin-left: 8px;
+        border-radius: 4px;
+        min-height: 38px;
+        min-width: 78px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+
+
+      .back{
+        background-color: var(--ul-color);
+        color: black;
+      }
+    }
+
+

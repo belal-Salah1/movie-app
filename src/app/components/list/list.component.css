@@ -1,0 +1,33 @@
+.imgs-container{
+  .row{
+    .movie-container{
+      transition: .3s;
+      &:hover{
+        transform: scale(1.07);
+        background-color: var(--card-hover-bg);
+      }
+      .stars{
+        color: gray;
+        font-size: 22px;
+      }
+      p, h6, span{
+        color: var(--text-color);
+      }
+    }
+  }
+}
+
+:host-context(body.dark-mode) h2,
+:host-context(body.dark-mode) h4,
+:host-context(body.dark-mode) h5,
+:host-context(body.dark-mode) p{
+  color: var(--text-color);
+}
+
+:host-context(body.dark-mode) .text-black-50{
+  color: var(--text-secondary) !important;
+}
+
+:host-context(body.dark-mode) .stars{
+  color: var(--text-secondary);
+}
