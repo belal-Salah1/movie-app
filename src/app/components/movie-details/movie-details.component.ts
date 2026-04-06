@@ -22,6 +22,7 @@ export class MovieDetailsComponent implements OnInit{
   movieTrailerUrl!:  string;
   secureMovieTrailerUrl!: SafeResourceUrl;
   movieCast: any[] = [];
+  recommendedMovies: any[] = [];
   currentIndex: number = 0;
   visibleCount: number = 7;
   @ViewChild('video_Container')video_Container!:ElementRef;
@@ -52,6 +53,7 @@ export class MovieDetailsComponent implements OnInit{
       }
     })
     this.getMovieCast();
+    this.getRecommendedMovies();
   }
 
   getMovieCast(){
@@ -102,6 +104,17 @@ export class MovieDetailsComponent implements OnInit{
   closeVideo() {
     this.video_Container.nativeElement.style.display = 'none';
   }
+  getRecommendedMovies(){
+    this.httpClient.get<any>(`${environment.url}${this.movieId}/recommendations${environment.api_key}`).subscribe({
+      next:(res)=>{
+        this.recommendedMovies = res.results.filter((m: any) => m.poster_path).slice(0, 6);
+      },
+      error:(err)=>{
+        console.log(err)
+      }
+    })
+  }
+
   goBack(){
     this._location.back();
   }

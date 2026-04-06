@@ -82,6 +82,28 @@
     </div>
   </div>
 </div>
+@if (recommendedMovies.length) {
+<div class="recommended">
+  <h3>RECOMMENDED</h3>
+  <span class="recommended-label">MOVIES</span>
+  <div class="recommended-grid">
+    @for (movie of recommendedMovies; track movie.id) {
+      <div class="recommended-card">
+        <a [routerLink]="['/details/movie', movie.id]">
+          <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" [alt]="movie.title">
+        </a>
+        <p class="recommended-title">{{ movie.title | uppercase }}</p>
+        <div class="stars-rating">
+          @for (star of [1,2,3,4,5]; track star) {
+            <span class="star" [class.filled]="star <= (movie.vote_average / 2)">&#9733;</span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>
+}
+
 <div class="video-container" *ngIf="secureMovieTrailerUrl" #video_Container>
   <i class="bi bi-x" (click)="closeVideo() " #closeIcon></i>
   <iframe #iframe
