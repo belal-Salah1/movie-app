@@ -1,0 +1,48 @@
+.category-label{
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+h4{
+  color: var(--text-color);
+}
+
+.no-results{
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.imgs-container{
+  .row{
+    .movie-container{
+      transition: transform 0.3s ease;
+      padding: 10px;
+      &:hover{
+        transform: scale(1.05);
+      }
+      .movie-poster{
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      }
+      .movie-title{
+        color: var(--text-color);
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin-top: 8px;
+      }
+      .stars-rating{
+        margin-top: 4px;
+        .star{
+          font-size: 16px;
+          color: var(--star-empty);
+          &.filled{
+            color: var(--star-filled);
+          }
+        }
+      }
+    }
+  }
+}

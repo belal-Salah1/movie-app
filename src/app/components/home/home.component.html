@@ -34,8 +34,11 @@
   <main class="main-content">
     <div class="navbar">
       <i class="bi bi-list list-icon" (click)="toggleListIcon()"></i>
+      <form class="search-form ms-auto" [class.open]="searchOpen" (ngSubmit)="onSearch()">
+        <input type="text" class="search-input" placeholder="Search movies..." [(ngModel)]="searchQuery" name="searchQuery" />
+      </form>
       <ul class="d-flex ms-auto mb-0">
-        <li><i class="bi bi-search"></i></li>
+        <li (click)="toggleSearch()" style="cursor:pointer"><i class="bi bi-search"></i></li>
         <li class="theme-toggle" (click)="toggleDarkMode()">
           <i class="bi" [ngClass]="isDarkMode ? 'bi-moon' : 'bi-brightness-high-fill'"></i>
         </li>

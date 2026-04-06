@@ -1,0 +1,24 @@
+<div class="text mb-4">
+  <h4 class="fw-normal mb-0 fs-3">Search Results for "{{query}}"</h4>
+  <span class="category-label fw-bold mt-0">SEARCH</span>
+</div>
+<div class="imgs-container" *ngIf="moviesArray.length > 0">
+  <div class="row m-0 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5">
+    @for(movie of moviesArray ; track $index){
+      <div class="movie-container text-center mb-4">
+        <a [routerLink]="['/details/movie', movie.id]">
+          <img [src]="movie.poster_path ? 'https://image.tmdb.org/t/p/w500' + movie.poster_path : 'https://via.placeholder.com/500x750?text=No+Image'" alt="" class="img-fluid movie-poster">
+        </a>
+        <p class="movie-title pt-2 mb-0">{{movie.title | uppercase}}</p>
+        <div class="stars-rating pb-4">
+          @for(star of [1,2,3,4,5]; track star){
+            <span class="star" [class.filled]="star <= (movie.vote_average / 2)">&#9733;</span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>
+<div *ngIf="moviesArray.length === 0 && query" class="no-results">
+  <p>No movies found for "{{query}}".</p>
+</div>
