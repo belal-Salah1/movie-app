@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MovieApiService } from '../../services/movie-api.service';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
@@ -14,8 +14,7 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent implements OnInit{
   genresMoviesArr: any[]= [];
   isDarkMode = false;
-  @ViewChild('ulsContainer') ulsContainer!: ElementRef;
-  @ViewChild('logoImage') logoImage!: ElementRef;
+  sidebarOpen = false;
   constructor(private _MovieApiService:MovieApiService, private httpCLient:HttpClient){
   }
   ngOnInit() {
@@ -34,15 +33,9 @@ export class HomeComponent implements OnInit{
         }
       })
   }
-  setUlContainerDisplay(){
-    return this.ulsContainer.nativeElement.style.display == 'block'? this.ulsContainer.nativeElement.style.display = 'none': this.ulsContainer.nativeElement.style.display = 'block';
-  }
-  setLogoImageDisplay(){
-    return this.logoImage.nativeElement.style.display == 'block'? this.logoImage.nativeElement.style.display = 'none': this.logoImage.nativeElement.style.display = 'block';
-  }
+
   toggleListIcon(){
-    this.setLogoImageDisplay();
-    this.setUlContainerDisplay();
+    this.sidebarOpen = !this.sidebarOpen;
   }
 
   toggleDarkMode(){

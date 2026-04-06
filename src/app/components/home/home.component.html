@@ -1,10 +1,9 @@
-<div class="container">
-  <div class="row">
-    <div class="col col-2 cat-slider ">
-      <div class="logo my-5">
-        <img src="assets/logo.PNG" alt="">
-      </div>
-      <div class="uls-container " #ulsContainer>
+<div class="app-layout">
+  <aside class="sidebar" [class.sidebar-open]="sidebarOpen">
+    <div class="logo my-4">
+      <img src="assets/logo.PNG" alt="">
+    </div>
+    <div class="sidebar-scroll">
       <div class="discover fw-bold">
         <p>DISCOVER</p>
         <ul>
@@ -24,32 +23,34 @@
           }
         </ul>
       </div>
-      </div>
-      <div class="image ul-flex " #logoImage>
-        <img src="../../../assets/movieDbLogo.PNG" alt="">
-      </div>
     </div>
-    <div class="col col-10 content">
-      <div class="navbar">
-        <i class="bi bi-list list-icon" (click)="toggleListIcon()"></i>
-        <ul class="d-flex ms-auto ">
-          <li ><i class="bi bi-search"></i></li>
-          <li class="theme-toggle" (click)="toggleDarkMode()">
-            <i class="bi" [ngClass]="isDarkMode ? 'bi-moon' : 'bi-brightness-high-fill'"></i>
-          </li>
-          <li><div class="cl-toggle-switch">
-            <label class="cl-switch">
-              <input type="checkbox" [checked]="isDarkMode" (change)="toggleDarkMode()">
-              <span></span>
-            </label>
-          </div></li>
-          <li><a href=""><i class="bi bi-person-circle"></i></a></li>
-        </ul>
-      </div>
+    <div class="image ul-flex" #logoImage>
+      <img src="../../../assets/movieDbLogo.PNG" alt="">
+    </div>
+  </aside>
 
-      <div class="movies-container">
-        <router-outlet></router-outlet>
-      </div>
+  <div class="sidebar-overlay" (click)="toggleListIcon()" [class.active]="sidebarOpen"></div>
+
+  <main class="main-content">
+    <div class="navbar">
+      <i class="bi bi-list list-icon" (click)="toggleListIcon()"></i>
+      <ul class="d-flex ms-auto mb-0">
+        <li><i class="bi bi-search"></i></li>
+        <li class="theme-toggle" (click)="toggleDarkMode()">
+          <i class="bi" [ngClass]="isDarkMode ? 'bi-moon' : 'bi-brightness-high-fill'"></i>
+        </li>
+        <li><div class="cl-toggle-switch">
+          <label class="cl-switch">
+            <input type="checkbox" [checked]="isDarkMode" (change)="toggleDarkMode()">
+            <span></span>
+          </label>
+        </div></li>
+        <li><a href=""><i class="bi bi-person-circle"></i></a></li>
+      </ul>
     </div>
-  </div>
+
+    <div class="movies-container">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
 </div>

@@ -3,7 +3,7 @@
   <span class="category-label fw-bold mt-0">CATEGORY</span>
 </div>
 <div class="imgs-container">
-  <div class="row m-0 row-cols-lg-3 row-cols-md-2">
+  <div class="row m-0 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5">
     @for(movie of getCatagoryMovies ; track $index){
       <div class="movie-container text-center mb-4">
         <a [routerLink]="['/details/movie', movie.id]" >
