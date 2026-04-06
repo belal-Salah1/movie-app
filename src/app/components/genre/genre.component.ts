@@ -15,6 +15,7 @@ export class GenreComponent implements OnInit {
   genresMoviesArr: any[]= [];
   getCatagoryMovies:any[]=[];
   catagoryName!:any;
+  isLoading = true;
   constructor(private _activatedRoute:ActivatedRoute, private httpClient:HttpClient){
   }
   ngOnInit() {
@@ -30,9 +31,11 @@ export class GenreComponent implements OnInit {
   }
 
   fetchMoviesByGenre(genreId:string) {
+    this.isLoading = true;
     this.httpClient.get<any>(`${environment.genre_url}discover/movie${environment.api_key}&with_genres=${genreId}`).subscribe({
       next:(res)=>{
         this.getCatagoryMovies = res.results;
+        this.isLoading = false;
       },
       error:(err)=>{
         console.log(err)

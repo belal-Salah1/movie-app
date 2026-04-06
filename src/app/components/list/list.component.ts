@@ -14,6 +14,7 @@ import { CommonModule } from '@angular/common';
 export class ListComponent implements OnInit {
   movieCatagory: string|null ='';
   moviesArray : any[] = [];
+  isLoading = true;
 constructor(private _activatedRoute:ActivatedRoute , private httpClient:HttpClient ){
 
 }
@@ -27,9 +28,11 @@ constructor(private _activatedRoute:ActivatedRoute , private httpClient:HttpClie
   }
 
   fetchCatagoryMovies(catagory:string){
+      this.isLoading = true;
       this.httpClient.get<any>(`${environment.url}${catagory}${environment.api_key}`).subscribe({
       next:(res)=>{
         this.moviesArray = res.results;
+        this.isLoading = false;
       },
       error: (err) => {
         console.error('Error fetching movies:', err);

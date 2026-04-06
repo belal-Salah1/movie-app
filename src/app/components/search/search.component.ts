@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 export class SearchComponent implements OnInit {
   query: string = '';
   moviesArray: any[] = [];
+  isLoading = false;
 
   constructor(private route: ActivatedRoute, private httpClient: HttpClient) {}
 
@@ -26,11 +27,13 @@ export class SearchComponent implements OnInit {
   }
 
   searchMovies(query: string) {
+    this.isLoading = true;
     this.httpClient
       .get<any>(`${environment.genre_url}search/movie${environment.api_key}&query=${encodeURIComponent(query)}`)
       .subscribe({
         next: (res) => {
           this.moviesArray = res.results;
+          this.isLoading = false;
         },
         error: (err) => {
           console.error('Error searching movies:', err);

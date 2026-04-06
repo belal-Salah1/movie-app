@@ -1,21 +1,36 @@
 <div class="text mb-4">
-  <h4 class="fw-normal mb-0 fs-3 text-uppercase">{{movieCatagory}}</h4>
-  <span class="category-label fw-bold mt-0">CATEGORY</span>
+  @if (isLoading) {
+    <div class="skeleton-title"></div>
+    <div class="skeleton-text" style="width:80px"></div>
+  } @else {
+    <h4 class="fw-normal mb-0 fs-3 text-uppercase">{{movieCatagory}}</h4>
+    <span class="category-label fw-bold mt-0">CATEGORY</span>
+  }
 </div>
 <div class="imgs-container">
   <div class="row m-0 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5">
-    @for(movie of moviesArray ; track $index){
-      <div class="movie-container text-center mb-4 ">
-        <a [routerLink]="['/details/movie', movie.id]">
-          <img [src]="'https://image.tmdb.org/t/p/w342' + movie.poster_path" alt="" class="img-fluid movie-poster" loading="lazy" width="342" height="513">
-        </a>
-        <p class="movie-title pt-2 mb-0">{{movie.title | uppercase}}</p>
-        <div class="stars-rating pb-4">
-          @for(star of [1,2,3,4,5]; track star){
-            <span class="star" [class.filled]="star <= (movie.vote_average / 2)">&#9733;</span>
-          }
+    @if (isLoading) {
+      @for(i of [1,2,3,4,5,6,7,8,9,10]; track i){
+        <div class="movie-container text-center mb-4">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-text mt-2" style="width:70%;margin-inline:auto"></div>
+          <div class="skeleton-text" style="width:50%;margin-inline:auto"></div>
         </div>
-      </div>
+      }
+    } @else {
+      @for(movie of moviesArray ; track $index){
+        <div class="movie-container text-center mb-4 ">
+          <a [routerLink]="['/details/movie', movie.id]">
+            <img [src]="'https://image.tmdb.org/t/p/w342' + movie.poster_path" alt="" class="img-fluid movie-poster" loading="lazy" width="342" height="513">
+          </a>
+          <p class="movie-title pt-2 mb-0">{{movie.title | uppercase}}</p>
+          <div class="stars-rating pb-4">
+            @for(star of [1,2,3,4,5]; track star){
+              <span class="star" [class.filled]="star <= (movie.vote_average / 2)">&#9733;</span>
+            }
+          </div>
+        </div>
+      }
     }
   </div>
 </div>
